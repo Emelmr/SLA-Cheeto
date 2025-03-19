@@ -46,7 +46,7 @@ DO_APP_FUNC(0x00CDCE00, void, PIPHNBOBFEF_KBCIIEFLPGB, (PIPHNBOBFEF* __this, ESp
 // God Mode
 DO_APP_FUNC(0x010A3CD0, int32_t, GHINOEFFMPN_EKHGIHBHEPL, (SkillIdentity* EKPKPIJBPKE, void/*IEnumerable_1_UnityEngine_Component_*/* FKJDKGJBGOD, TargetHitData* COFCDKGCOGJ, MethodInfo* method));
 // Dumb Enemies
-DO_APP_FUNC(0x01145230, void, EvadeProxy_Init, (EvadeProxy* __this, ENNEJEPMJLJ* IGBKKNODEGM, EvadePenetration* DHPMEMDBDMC, MethodInfo* method));
+DO_APP_FUNC(0x01268FD0, void, EvadeProxy_Init, (EvadeProxy* __this, ENNEJEPMJLJ* IGBKKNODEGM, EvadePenetration* DHPMEMDBDMC, MethodInfo* method));
 
 // EntityManager
 DO_APP_FUNC(0x00D1BDF0, void, ENHPKNIEKMI_MIFDFEHDDDD, (ENHPKNIEKMI* __this, MethodInfo* method));
@@ -54,13 +54,13 @@ DO_APP_FUNC(0x00777A40, ENHPKNIEKMI*, ENNEJEPMJLJ_FIGHFBNIDJA, (ENNEJEPMJLJ* __t
 DO_APP_FUNC(0x010EEA80, bool, PCILGJOEPJM_PPAKPBOJLIP, (ENNEJEPMJLJ* IGBKKNODEGM, MethodInfo* method)); // Check if Entity is alive????
 
 // Mission Time
-DO_APP_FUNC(0x007F3680, void, StageReadyPage_EnterUI, (StageReadyPage* __this, MethodInfo* method));
-DO_APP_FUNC(0x007F91A0, void, StoryQuestChapterPage_EnterUI, (StoryQuestChapterPage* __this, MethodInfo* method));
+DO_APP_FUNC(0x008AEE00, void, StageReadyPage_EnterUI, (StageReadyPage* __this, MethodInfo* method));
+DO_APP_FUNC(0x008B6A40, void, StoryQuestChapterPage_EnterUI, (StoryQuestChapterPage* __this, MethodInfo* method));
 // Intro Movie
-DO_APP_FUNC(0x01251910, void, IntroMovie_Update, (IntroMovie* __this, MethodInfo* method));
+DO_APP_FUNC(0x01378F10, void, IntroMovie_Update, (IntroMovie* __this, MethodInfo* method));
 // Disable Web View
-DO_APP_FUNC(0x031CD7C0, void, WebViewDialog_Show, (void* __this, MethodInfo* method));
-DO_APP_FUNC(0x031E3580, void, WebViewUI_RefreshSize, (void* __this, MethodInfo* method));
+DO_APP_FUNC(0x033AF220, void, WebViewDialog_Show, (void* __this, MethodInfo* method));
+DO_APP_FUNC(0x033C4FE0, void, WebViewUI_RefreshSize, (void* __this, MethodInfo* method));
 
 //DO_APP_FUNC(0x00430040, EGLGAPIAANF__Enum, JIBDAHKJHOG_PCLINKFFGNE, (JIBDAHKJHOG* __this, MethodInfo* method));
 //DO_APP_FUNC(0x00837FE0, void, JIBDAHKJHOG_KPDGECAFJKA, (JIBDAHKJHOG* __this, MethodInfo* method));
