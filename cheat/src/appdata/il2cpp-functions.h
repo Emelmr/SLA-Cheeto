@@ -6,38 +6,38 @@
 // ******************************************************************************
 using namespace app;
 
-DO_APP_FUNC(0x00785F00, void, GameFrameWork_Update, (void/*GameFrameWork*/* __this, MethodInfo* method));
+DO_APP_FUNC(0x0088F610, void, GameFrameWork_Update, (void/*GameFrameWork*/* __this, MethodInfo* method));
 
-DO_APP_FUNC(0x02F05CB0, String*, Marshal_PtrToStringAnsi, (void* ptr, MethodInfo* method));
-DO_APP_FUNC(0x02F05CD0, String*, Marshal_PtrToStringUni, (void* ptr, MethodInfo* method));
+DO_APP_FUNC(0x030E4FF0, String*, Marshal_PtrToStringAnsi, (void* ptr, MethodInfo* method));
+DO_APP_FUNC(0x030E5010, String*, Marshal_PtrToStringUni, (void* ptr, MethodInfo* method));
 
 // FovChanger
-DO_APP_FUNC(0x040106A0, void, Camera_set_fieldOfView, (void* __this, float value, MethodInfo* method));
+DO_APP_FUNC(0x041F6880, void, Camera_set_fieldOfView, (void* __this, float value, MethodInfo* method));
 
 // C# methods
-DO_APP_FUNC(0x0303F4A0, Type*, Type_GetType_3, (String* typeName, MethodInfo* method));
-DO_APP_FUNC(0x02F19C50, Type*, Assembly_GetType, (Assembly* __this, String* name, MethodInfo* method));
-DO_APP_FUNC(0x02F1A170, Assembly*, Assembly_LoadWithPartialName, (String* partialName, MethodInfo* method));
+DO_APP_FUNC(0x0321F680, Type*, Type_GetType_3, (String* typeName, MethodInfo* method));
+DO_APP_FUNC(0x030F8FB0, Type*, Assembly_GetType, (Assembly* __this, String* name, MethodInfo* method));
+DO_APP_FUNC(0x030F94D0, Assembly*, Assembly_LoadWithPartialName, (String* partialName, MethodInfo* method));
 // Unity methods
-DO_APP_FUNC(0x04009530, int32_t, Application_get_targetFrameRate, (MethodInfo* method));
-DO_APP_FUNC(0x04009C50, void, Application_set_targetFrameRate, (int32_t value, MethodInfo* method));
-DO_APP_FUNC(0x0406A280, Vector3, Vector3_Lerp, (Vector3 a, Vector3 b, float t, MethodInfo* method));
-DO_APP_FUNC(0x0406A020, float, Vector3_Distance, (Vector3 a, Vector3 b, MethodInfo* method));
-DO_APP_FUNC(0x04054F20, Transform*, GameObject_get_transform, (GameObject* __this, MethodInfo* method));
-DO_APP_FUNC(0x04053ED0, GameObject*, GameObject_Find, (String* name, MethodInfo* method));
-DO_APP_FUNC(0x04059B80, String*, Object_1_get_name, (Object_1* __this, MethodInfo* method));
-DO_APP_FUNC(0x04062000, void, Time_4_set_timeScale, (float value, MethodInfo* method));
-DO_APP_FUNC(0x04066310, Vector3, Transform_get_position, (Transform* __this, MethodInfo* method));
-DO_APP_FUNC(0x04066EF0, void, Transform_set_position, (Transform* __this, Vector3 value, MethodInfo* method));
-DO_APP_FUNC(0x04066360, Vector3, Transform_get_right, (Transform* __this, MethodInfo* method));
-DO_APP_FUNC(0x04066F40, void, Transform_set_right, (Transform* __this, Vector3 value, MethodInfo* method));
-DO_APP_FUNC(0x04066630, Vector3, Transform_get_up, (Transform* __this, MethodInfo* method));
-DO_APP_FUNC(0x040670C0, void, Transform_set_up, (Transform* __this, Vector3 value, MethodInfo* method));
-DO_APP_FUNC(0x04065B80, Vector3, Transform_get_forward, (Transform* __this, MethodInfo* method));
-DO_APP_FUNC(0x04066A10, void, Transform_set_forward, (Transform* __this, Vector3 value, MethodInfo* method));
-DO_APP_FUNC(0x04065A20, int32_t, Transform_get_childCount, (Transform* __this, MethodInfo* method));
-DO_APP_FUNC(0x040803A0, String*, Scene_GetNameInternal, (int32_t sceneHandle, MethodInfo* method));
-DO_APP_FUNC(0x0407ED70, Scene, SceneManager_GetActiveScene, (MethodInfo* method));
+DO_APP_FUNC(0x041EF710, int32_t, Application_get_targetFrameRate, (MethodInfo* method));
+DO_APP_FUNC(0x041EFE30, void, Application_set_targetFrameRate, (int32_t value, MethodInfo* method));
+DO_APP_FUNC(0x04250450, Vector3, Vector3_Lerp, (Vector3 a, Vector3 b, float t, MethodInfo* method));
+DO_APP_FUNC(0x042501F0, float, Vector3_Distance, (Vector3 a, Vector3 b, MethodInfo* method));
+DO_APP_FUNC(0x0423B100, Transform*, GameObject_get_transform, (GameObject* __this, MethodInfo* method));
+DO_APP_FUNC(0x0423A0B0, GameObject*, GameObject_Find, (String* name, MethodInfo* method));
+DO_APP_FUNC(0x0423FD50, String*, Object_1_get_name, (Object_1* __this, MethodInfo* method));
+DO_APP_FUNC(0x042481D0, void, Time_4_set_timeScale, (float value, MethodInfo* method));
+DO_APP_FUNC(0x0424C4E0, Vector3, Transform_get_position, (Transform* __this, MethodInfo* method));
+DO_APP_FUNC(0x0424D0C0, void, Transform_set_position, (Transform* __this, Vector3 value, MethodInfo* method));
+DO_APP_FUNC(0x0424C530, Vector3, Transform_get_right, (Transform* __this, MethodInfo* method));
+DO_APP_FUNC(0x0424D110, void, Transform_set_right, (Transform* __this, Vector3 value, MethodInfo* method));
+DO_APP_FUNC(0x0424C800, Vector3, Transform_get_up, (Transform* __this, MethodInfo* method));
+DO_APP_FUNC(0x0424D290, void, Transform_set_up, (Transform* __this, Vector3 value, MethodInfo* method));
+DO_APP_FUNC(0x0424BD50, Vector3, Transform_get_forward, (Transform* __this, MethodInfo* method));
+DO_APP_FUNC(0x0424CBE0, void, Transform_set_forward, (Transform* __this, Vector3 value, MethodInfo* method));
+DO_APP_FUNC(0x0424BBF0, int32_t, Transform_get_childCount, (Transform* __this, MethodInfo* method));
+DO_APP_FUNC(0x04266570, String*, Scene_GetNameInternal, (int32_t sceneHandle, MethodInfo* method));
+DO_APP_FUNC(0x04264F40, Scene, SceneManager_GetActiveScene, (MethodInfo* method));
 
 // No Cooldown
 DO_APP_FUNC(0x00D15840, void/*KAAIFMKPKAG*/*, KAAIFMKPKAG_IOFMGMJCCFO, (KAAIFMKPKAG* __this, bool DEJNILEHENL, MethodInfo* method));
@@ -73,6 +73,6 @@ DO_APP_FUNC(0x0110C710, void, JLLMICINIDA_LFCGJLAFFOM, (JLLMICINIDA* __this, Met
 
 // Singletons
 // DO_APP_FUNC(0x00384E60, void*, TSingleton_GetInstance, (MethodInfo* method)); // Search for this in IDA. Seems to be Singleton<T> class
-DO_APP_FUNC(0x0048AAE0, Object*, TSingleton_1_System_Object__get_Instance, (MethodInfo* method)); // Get the instance of the singleton
+DO_APP_FUNC(0x00494AE0, Object*, TSingleton_1_System_Object__get_Instance, (MethodInfo* method)); // Get the instance of the singleton
 // DO_APP_FUNC_METHODINFO(0x04038380, TSingleton_1_JIBDAHKJHOG__get_Instance__MethodInfo);
 // DO_APP_FUNC_METHODINFO(0x0403AC70, TSingleton_1_PJKMAOEINNH__get_Instance__MethodInfo); // Probably EntityManager or something similar
