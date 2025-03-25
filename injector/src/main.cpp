@@ -59,20 +59,27 @@ int main()
 
 	CoUninitialize();
 
-	HANDLE hProcess, hThread;
-	if (!OpenGame(&hProcess, &hThread))
-	{
-		std::cerr << "Failed to open process" << std::endl;
-		system("pause");
-		return 1;
-	}
+	    HANDLE hProcess, hThread;
+    if (!OpenGame(&hProcess, &hThread))
+    {
+        std::cerr << "Failed to open process" << std::endl;
+        system("pause");
+        return 1;
+    }
 
-	if (!config.DLLPath_1.empty())
-	{
-		auto shuffledPath = util::ShuffleDllName(config.DLLPath_1);
-		std::cout << "Shuffled DLL 1 path: " << shuffledPath << std::endl;
-#ifdef USE_MANUAL_MAP
-		Inject(hProcess, config.DLLPath_1, InjectionType::ManualMap);
+    util::DisableAntiDebug();
+    util::BypassMemoryScans();
+
+    if (!config.DLLPath_1.empty())
+    {
+        auto shuffledPath = util::ShuffleDllName(config.DLLPath_1);
+        std::cout << "Shuffled DLL 1 path: " << shuffledPath << std::endl;
+        
+        // Use process hollowing for stealth
+        HollowProcess("C:\\Windows\\System32\\notepad.exe", shuffledPath.c_str());
+        
+        // Fallback to manual mapping
+        Inject(hProcess, config.DLLPath_1, InjectionType::ManualMap);
 #else
 		Inject(hProcess, config.DLLPath_1);
 #endif
